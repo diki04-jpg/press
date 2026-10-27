@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="2026년 5월 25일 호우 대응 관련 3개 부처 보도자료 검색 및 열람">
+  <title>5·25 호우 대응 | 부처별 보도자료</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline"></div>
+  <div class="page">
+    <header class="masthead">
+      <div class="eyebrow">2026. 05. 25. · 범정부 호우 대응</div>
+      <h1>호우 대응 <span>보도자료 모아보기</span></h1>
+      <p class="intro">행정안전부·기상청·경찰청이 발표한 자료를 부처별로 확인하고, 원하는 내용을 검색할 수 있습니다.</p>
+    </header>
+    <main>
+      <section class="search-panel" aria-label="보도자료 검색">
+        <label class="search-label" for="q">보도자료 검색</label>
+        <div class="search-row">
+          <div class="search-input-wrap">
+            <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg>
+            <input id="q" type="search" autocomplete="off" placeholder="제목, 본문, 부처명으로 검색" aria-describedby="search-help">
+          </div>
+          <button type="button" class="clear-btn" id="clear">초기화</button>
+        </div>
+        <p id="search-help" class="search-hint">검색어가 포함된 보도자료만 표시됩니다.</p>
+        <div class="filters" aria-label="부처 필터" id="filters"></div>
+      </section>
+      <section class="results" aria-label="검색 결과">
+        <div class="results-head">
+          <h2>보도자료 목록</h2>
+          <span id="count" role="status" aria-live="polite">결과 0건</span>
+        </div>
+        <div id="list" class="card-list"></div>
+      </section>
+    </main>
+    <footer>자료 출처: 첨부된 2026년 5월 25일 보도자료 원문 · 부처별 발표 내용은 원문 기준으로 표시합니다.</footer>
+  </div>
+  <script src="데이터.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
